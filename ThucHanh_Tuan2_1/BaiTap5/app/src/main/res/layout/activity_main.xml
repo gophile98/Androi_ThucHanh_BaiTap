@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:background="#FFFF00"
+        android:textColor="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Thông tin hóa đơn"/>
+
+    <LinearLayout
+        android:weightSum="6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_weight="2"
+            android:text="Tên khách hàng:"
+            android:textSize="17dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/edttkh"
+            android:layout_weight="4"
+            android:textSize="17dp"
+            android:textColor="#000000"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_weight="2"
+            android:text="Số lượng sách:"
+            android:textSize="17dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/edtsls"
+            android:layout_weight="4"
+            android:textSize="17dp"
+            android:textColor="#000000"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_weight="2"
+
+            android:textSize="17dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <CheckBox
+            android:id="@+id/cbkh"
+            android:layout_weight="4"
+            android:textSize="19dp"
+            android:text="Khách hàng là VIP"
+            android:textColor="#000000"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_weight="2"
+            android:text="Thàn tiền:"
+            android:textSize="17dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/btntt"
+            android:layout_weight="4"
+            android:textSize="17dp"
+            android:layout_marginRight="5dp"
+            android:background="#808080"
+            android:textColor="#008000"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:weightSum="6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button
+            android:id="@+id/btntinhtt"
+            android:layout_weight="2"
+            android:textSize="17dp"
+            android:layout_marginLeft="5dp"
+            android:text="Tín TT"
+            android:background="#C0C0C0"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <Button
+
+            android:id="@+id/btnt"
+            android:layout_weight="2"
+            android:textSize="17dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Tiếp"
+            android:background="#C0C0C0"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/btntk"
+            android:layout_weight="2"
+            android:textSize="17dp"
+            android:layout_marginRight="5dp"
+            android:text="Thống kê"
+            android:background="#C0C0C0"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:background="#FFFF00"
+        android:textColor="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Thông tin thống kê:"/>
+
+    <LinearLayout
+        android:weightSum="6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_weight="2"
+            android:text="Tổng số khách hàng:"
+            android:textSize="12dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/edttskh"
+            android:layout_weight="4"
+            android:layout_marginRight="5dp"
+            android:textSize="17dp"
+            android:textColor="#000000"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_weight="2"
+            android:text="Tổng số khách hàng VIP:"
+            android:textSize="10dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/edttskhvip"
+            android:layout_weight="4"
+            android:layout_marginRight="5dp"
+            android:textSize="17dp"
+            android:textColor="#000000"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_weight="2"
+            android:text="Tổng doanh thu:"
+            android:textSize="16dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/edttdt"
+            android:layout_weight="4"
+            android:layout_marginRight="5dp"
+            android:textSize="17dp"
+            android:textColor="#000000"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageButton
+            android:layout_marginLeft="328dp"
+            android:layout_width="50dp"
+            android:src="@drawable/anh1"
+            android:layout_height="match_parent" />
+    </ScrollView>
+</LinearLayout>

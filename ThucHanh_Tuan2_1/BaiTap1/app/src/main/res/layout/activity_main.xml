@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:text="Cac kieu lap trinh su kien"
+       android:textSize="30dp"
+       android:gravity="center"
+       android:textColor="#FFFFFF"
+       android:background="#006633"
+       />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="3"
+        >
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="So a:"
+            android:textColor="#000000"
+            android:textSize="30dp"/>
+        <EditText
+            android:id="@+id/soa"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="3"
+        >
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="So b:"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="30dp"/>
+        <EditText
+            android:id="@+id/sob"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/kq"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="#006633"/>
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/tong"
+        android:text="Tong 2 so"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:background="#BBBBBB"/>
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/hieu"
+        android:text="Hieu 2 so"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:background="#BBBBBB"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/tich"
+        android:text="Tich 2 so"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:background="#BBBBBB"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/thuong"
+        android:text="thuong 2 so"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:background="#BBBBBB"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/ucln"
+        android:text="uoc so chung lon nhat"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:background="#BBBBBB"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/thoat"
+        android:text="thoat"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:background="#BBBBBB"/>
+
+
+
+</LinearLayout>
