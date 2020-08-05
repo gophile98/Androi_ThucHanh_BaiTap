@@ -29,7 +29,7 @@
           android:layout_width="0dp"
           android:layout_height="60dp" />
       <EditText
-          android:id="@+id/edt1"
+          android:id="@+id/edtdl"
           android:textColor="#000000"
           android:textSize="19dp"
           android:layout_weight="3"
@@ -62,7 +62,7 @@
       <TextView
           android:textColor="#000000"
           android:background="#FFFF00"
-          android:id="@+id/tv2"
+          android:id="@+id/tval"
           android:textSize="19dp"
           android:layout_weight="3"
           android:layout_width="0dp"

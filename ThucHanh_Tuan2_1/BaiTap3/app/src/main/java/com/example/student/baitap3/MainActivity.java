@@ -9,9 +9,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    EditText edt1;
-    TextView tv1;
-    Button btn1;
+    EditText duonglich;
+    TextView amlich;
+    Button chuyendoi;
     int can , chi;
 
 
@@ -20,51 +20,25 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        edt1 = findViewById(R.id.edt1);
-        tv1 = findViewById(R.id.tv2);
-        btn1 = findViewById(R.id.btncd);
+        duonglich = findViewById(R.id.edtdl);
+        amlich = findViewById(R.id.tval);
+        chuyendoi = findViewById(R.id.btncd);
 
-        btn1.setOnClickListener(new View.OnClickListener() {
+        chuyendoi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String can[]={"Canh", "Tân","Nhâm", "Quý", "Giáp", "Ất", "Bính","Đinh","Mậu", "Kỉ"};
+                String chi[]={"Thân", "Dậu", "Tuất", "Hợi", "Tý", "Sửu", "Dần", "Mão", "Thìn","Tỵ","Ngọ", "Mùi"};
 
-                int edt= Integer.parseInt(edt1.getText()+"");
-                if (edt>=1990){
-                    can =edt%10;
-                  switch (can){
-                      case 0:
-                          System.out.println("Canh");
-                          break;
-                      case 3:
-                          System.out.println("Quy");
-                  };
-                  chi = edt%12;
-                  switch (chi){
-                      case 0:
-                          System.out.println("Than");
-                          break;
-
-                      case 9:
-                          System.out.println("Ty");
-
-                  }
-                    System.out.println(can+chi);
-                }
-
-
-
-                else {
-                    
-                }
-            }
-        });
-        tv1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                System.out.println(btn1);
+                String dl = duonglich.getText().toString();
+                int n = Integer.parseInt(dl);
+                String kq= can[n%10] + " " + chi[n%12];
+                amlich.setText(kq);
 
             }
         });
+
+
 
     }
 }
