@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Book">
+    <LinearLayout
+
+        android:layout_marginLeft="250dp"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/btnthoat_book"
+            android:textSize="20dp"
+            android:text="Thoat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:weightSum="5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <EditText
+            android:hint="ID"
+            android:textSize="20dp"
+            android:id="@+id/edtid_book"
+            android:layout_width="250dp"
+            android:layout_height="match_parent">
+
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <EditText
+            android:id="@+id/edttitle"
+            android:hint="Title"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <EditText
+            android:id="@+id/edtauthor"
+            android:hint="Author"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button
+            android:id="@+id/btnselect"
+            android:text="Select_book"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnsave_book"
+            android:text="Save"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btndelete_book"
+            android:text="Delete"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </Button>
+        <Button
+            android:id="@+id/btnupdate_book"
+            android:text="Update"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </Button>
+
+    </LinearLayout>
+    <GridView
+        android:layout_margin="5dp"
+        android:id="@+id/griview_book"
+        android:numColumns="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </GridView>
+
+</LinearLayout>
